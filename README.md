@@ -4,4 +4,4 @@ Repósito para colocar em prática os meus conhecimentos em HTML e CSS criando u
 
 A tela de login foi desenvolvida conforme modelo do Dribbble:
 
-https://dribbble.com/shots/14701556-LOGIN/attachments/6400564?mode=media
+<a href="https://dribbble.com/shots/14701556-LOGIN" target="_blank">Modelo do Dribble</a>
