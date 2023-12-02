@@ -18,8 +18,6 @@
 .login {
     display: flex;
     flex-direction: column ;
-    align-items: center;
-    justify-content: center;
 }
 
 input {
@@ -44,6 +42,7 @@ span {
 
 button {
     font-size: 15px;
+    font-weight: 500;
     color: #727171;
     background-color: #ccc7c7;
     margin-top: 60px;
