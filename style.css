@@ -30,7 +30,7 @@ input {
     text-align: left;
     border-radius: 30px;
     border: none;
-    background-color: #f3f3f3;
+    background-color: #F5F4F2;
 }
 
 span {
@@ -44,7 +44,7 @@ button {
     font-size: 15px;
     font-weight: 500;
     color: #727171;
-    background-color: #ccc7c7;
+    background-color: #D7D5CB;
     margin-top: 60px;
     width: 320px;
     height: 60px;
