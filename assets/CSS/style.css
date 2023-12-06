@@ -19,13 +19,15 @@
     align-items: center;
 }
 
-span {
+.login span {
     font-weight: 500;
     font-size: 40px; 
     box-sizing: border-box;
 }
 
-input {
+
+.input-box input {
+    display: flex;
     font-size: 15px;
     width: 300px;
     height: 60px;
@@ -36,7 +38,13 @@ input {
     background-color: #F5F4F2;
 }
 
-button {
+.input-box img {
+    display: flex;
+    position: relative;
+    width: 35px;
+}
+
+.login button {
     font-size: 15px;
     font-weight: 500;
     color: #727171;
@@ -47,4 +55,7 @@ button {
     border-radius: 30px;
     border: none;
 }
+
+
+
 
