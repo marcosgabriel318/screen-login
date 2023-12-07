@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -17,6 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .login span {
@@ -30,7 +32,7 @@
 }
 
 
-.input-box input {
+.input-box .input-default {
     display: flex;
     font-size: 15px;
     width: 300px;
@@ -43,7 +45,6 @@
 }
 
 .input-box img {
-    display: flex;
     position: absolute;
     width: 30px;
     right: 20px;
@@ -51,12 +52,39 @@
 
 }
 
+.input-box .input-remember {
+    margin-top: 21px;
+    left: 10px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.input-box label {
+    margin-top: 20px;
+    left: 28px;
+    position: absolute;
+    font-size: 15px;
+    color: #727171;
+}
+
+
+.input-box a {
+    font-size: 15px;
+    margin-top: 20px;
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: #727171;
+}
+
+
 .login button {
     font-size: 15px;
     font-weight: 500;
     color: #727171;
     background-color: #D7D5CB;
-    margin-top: 60px;
+    margin-top: 80px;
     width: 320px;
     height: 60px;
     border-radius: 30px;
