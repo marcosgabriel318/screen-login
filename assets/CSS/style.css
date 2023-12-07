@@ -25,13 +25,17 @@
     box-sizing: border-box;
 }
 
+.input-box {
+    position: relative;
+}
+
 
 .input-box input {
     display: flex;
     font-size: 15px;
     width: 300px;
     height: 60px;
-    padding-left: 15px;
+    padding-left: 20px;
     margin-top: 20px;
     border-radius: 30px;
     border: none;
@@ -40,8 +44,11 @@
 
 .input-box img {
     display: flex;
-    position: relative;
-    width: 35px;
+    position: absolute;
+    width: 30px;
+    right: 20px;
+    bottom: 14px;
+
 }
 
 .login button {
