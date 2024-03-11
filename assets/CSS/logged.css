@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+.div-logged {
+    display: none;
+    margin: auto;
+    padding: 80px 40px;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #F5F4F2;
+    border-radius: 15px;
+}
+
+.div-logged h2 {
+    font-weight: 500;
+    font-size: 40px; 
+    box-sizing: border-box;
+}
+
+
+.div-logged h3 {
+    margin-top: 50px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    padding: 5px 10px;
+}
+
+
