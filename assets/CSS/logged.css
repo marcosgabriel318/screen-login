@@ -26,7 +26,6 @@
     box-sizing: border-box;
 }
 
-
 .div-logged h3 {
     margin-top: 50px;
     border: 2px solid black;
@@ -34,4 +33,9 @@
     padding: 5px 10px;
 }
 
+.incorrect-credentials {
+    padding-top: 20px;
+    font-weight: 500;
+    color: lightcoral;
+}
 
