@@ -81,6 +81,7 @@
 }
 
 .div-login button.is-active {
+    cursor: pointer;
     background-color: #9BB0C1;
     font-weight: 700;
     color: #ffffff;

@@ -3,6 +3,7 @@ const passwordInput = document.getElementById("password");
 const emailInput = document.getElementById("email");
 const submitBtn = document.querySelector("button");
 const submitForm = document.querySelector("form");
+const divLogin = document.querySelector(".div-login ");
 const inputLogin = document.querySelectorAll(".input-login");
 
 
@@ -29,6 +30,12 @@ function hiddenPasswordDefault(){
     eyeicon.src = "/assets/images/hide.png"
 }
 
+function formDefault(){
+    hiddenPasswordDefault();
+    submitBtn.classList.remove('is-active')
+    submitBtn.disabled = true;
+}
+
 eyeicon.addEventListener('click', () => {
     if(password.type == "password"){
         password.type = "text";
@@ -38,10 +45,10 @@ eyeicon.addEventListener('click', () => {
     }
 })
 
+
 emailInput.addEventListener('input', () =>{
     passwordInput.addEventListener('input', () => {
         if(emailInput.value && passwordInput.value){
-            //submitBtn.removeAttribute("disabled");
             submitBtn.classList.add('is-active');
             submitBtn.disabled = false;
         } else {
@@ -59,6 +66,6 @@ submitForm.addEventListener('submit', (event)=> {
         event.preventDefault();
         emailInput.value = ""
         passwordInput.value = "";
-        hiddenPasswordDefault();
+        formDefault();
     }
 })
