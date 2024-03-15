@@ -11,8 +11,12 @@ const user_email= "example@email.com";
 const user_password = "randompassword";
 
 function displayLogged(){
-    document.querySelector('.div-login').remove();
-    document.querySelector('.div-logged').style.setProperty("display", "flex");
+    divLogin.remove();
+    document.querySelector('.wrapper').innerHTML = `
+        <div class="div-logged">
+            <h2>Welcome back!</h2>
+            <h3>You are logged </h3>
+        </div>`;
 }
 
 function displayIncorrectCredentials(){
@@ -48,15 +52,17 @@ eyeicon.addEventListener('click', () => {
 
 emailInput.addEventListener('input', () =>{
     passwordInput.addEventListener('input', () => {
-        if(emailInput.value && passwordInput.value){
+       if(emailInput.value && passwordInput.value){
             submitBtn.classList.add('is-active');
             submitBtn.disabled = false;
         } else {
-            submitBtn.classList.remove('is-active')
+            submitBtn.classList.remove('is-active');
             submitBtn.disabled = true;
         }
-    })
+    })    
 })
+
+
 
 submitForm.addEventListener('submit', (event)=> {
     if (emailInput.value == user_email && passwordInput.value == user_password){

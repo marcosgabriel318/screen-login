@@ -9,7 +9,7 @@
 
 
 .div-logged {
-    display: none;
+    display: flex;
     margin: auto;
     padding: 80px 40px;
     width: 300px;
