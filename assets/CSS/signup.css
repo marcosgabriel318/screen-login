@@ -8,87 +8,75 @@
     width: 100%;
 }
 
-.div-login {
+.signup-container {
     background-color: var(--bg-color-login);
-    padding: 80px 0px 80px 0px;
-    margin: auto;
-    width: auto;
+    padding: 40px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
 }
 
-.div-login h2 {
+.signup-container h2 {
     font-weight: 500;
     font-size: 40px; 
     box-sizing: border-box;
 }
 
-.login-box {
-    position: relative;
-    margin-bottom: 10px;
+.signup-form {
+    display: flex;
+    margin-top: 2.5rem;
+    margin-bottom: 0.625rem;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 1rem;
 }
 
+.signup-form label {
+    font-size: 1rem;
+    color: var(--grey-txt-disable);
+    font-weight: 500;
+}
 
-.login-box .login-input {
-    display: flex ;
-    font-size: 15px;
+.signup-form .input-name {
+    display: flex;
+    gap: .5rem;
     width: 100%;
-    height: 60px;
-    padding-left: 20px;
-    margin-top: 20px;
-    border-radius: 30px;
-    border: none;
+
+}
+
+.signup-form input{
+    display: flex ;
+    font-size: 1rem;
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 20px;
     background-color: var(--bg-color-login-input);
     border: 2px solid rgb(179, 178, 178);
 }
 
-.login-box img {
-    position: absolute;
-    width: 30px;
-    right: 20px;
-    top: 115px;
+
+
+.user-name .first-name, .last-name {
+    display: flex;
+    flex-direction: column;  
 }
 
-.login-box .input-remember {
-    margin-top: 21px;
-    left: 10px;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-}
-
-.login-box label {
-    margin-top: 20px;
-    left: 28px;
-    position: absolute;
-    font-size: 15px;
-    color: #727171;
-}
-
-.login-box a {
-    font-size: 15px;
-    margin-top: 20px;
-    position: absolute;
-    right: 10px;
-    text-decoration: none;
-    color: var(--grey-txt-disable);
-}
-
-.div-login button:disabled {
+.signup-container button:disabled {
     cursor: not-allowed;
     font-size: 15px;
     font-weight: 500;
     color: var(--grey-txt-disable);
     background-color: #D7D5CB;
-    margin-top: 80px;
-    width: 320px;
-    height: 60px;
-    border-radius: 30px;
+    margin-top: 30px;
+    width: auto;
+    height: 50px;
+    border-radius: 20px;
     border: none;
 }
 
-.div-login button.is-active {
+.signup-container button.is-active {
     cursor: pointer;
     background-color: var(--blue-global);
     font-weight: 700;
@@ -103,25 +91,37 @@
     border: none;
 }
 
-.div-login a {
+.signup-container a {
+    font-size: 15px;
     text-decoration: none;
     color: var(--grey-txt-disable);
     font-weight: 500;
-    font-size: 15px;
 }
 
-@media screen and (min-width: 600px) {
-    .div-login {
+
+
+@media only screen and (min-width: 600px) {
+    .signup-container h2 {
+        font-size: 40px; 
+    }
+    .signup-container {
         background-color: var(--bg-color-login);
-        padding: 80px 0px 80px 0px;
+        padding: 40px;
         margin: auto;
-        width: 500px;
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         box-shadow: 3px 3px 25px rgba(0, 0, 0, .2);
         border-radius: 25px;
     }
+    
+    .signup-form {
+        padding: 0 2rem;
+        width: 80%;
+    }
+
+
 
     .wrapper {
         background-color: var(--blue-global);

@@ -5,19 +5,43 @@ const submitBtn = document.querySelector("button");
 const submitForm = document.querySelector("form");
 const divLogin = document.querySelector(".div-login ");
 const inputLogin = document.querySelectorAll(".input-login");
+const wrapper = document.querySelector(".wrapper");
+const signUpBtn = document.querySelector(".sign-up");
 
 
 const user_email= "example@email.com";
 const user_password = "randompassword";
 
+
+function signIn(){
+
+}
+
+function logOut(iconLogout, divLogged){
+    iconLogout.addEventListener('click', ()=> {
+        wrapper.removeChild(divLogged);
+        wrapper.appendChild(divLogin)
+        formDefault();
+        emailInput.value = ""
+        passwordInput.value = "";
+    })
+}
+
 function displayLogged(){
-    divLogin.remove();
-    document.querySelector('.wrapper').innerHTML = `
+    wrapper.innerHTML = `
         <div class="div-logged">
+            <div class="logout">
+                <button><span class="icon-logout"></span></button>
+            </div>
             <h2>Welcome back!</h2>
             <h3>You are logged </h3>
         </div>`;
-}
+    const iconLogout = document.querySelector(".icon-logout");
+    const divLogged = document.querySelector('.div-logged');
+    logOut(iconLogout, divLogged);
+};
+    
+
 
 function displayIncorrectCredentials(){
     const element = document.createElement("span");
@@ -40,6 +64,45 @@ function formDefault(){
     submitBtn.disabled = true;
 }
 
+signUpBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    wrapper.innerHTML = `
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form class="signup-form">
+                <div class="input-name">
+                    <div class="first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>  
+                </div>
+
+                <div class="input-email">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+
+                <div class="input-password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="input-password">
+                    <label for="password">Confirm your password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <button class="submit" disabled>Confirm</button>
+            </form>
+        <a href=""> Log In</a>
+
+        </div>
+   `
+})
+
 eyeicon.addEventListener('click', () => {
     if(password.type == "password"){
         password.type = "text";
@@ -61,7 +124,6 @@ emailInput.addEventListener('input', () =>{
         }
     })    
 })
-
 
 
 submitForm.addEventListener('submit', (event)=> {

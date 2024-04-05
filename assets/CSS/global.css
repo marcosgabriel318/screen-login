@@ -3,4 +3,13 @@
     margin: 0;
     border: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color-login: #ffffff;
+    --bg-color-login-input: #F5F4F2;
+    --blue-global: #9BB0C1;
+    --grey-bg-btn-disable: #D7D5CB;
+    --grey-txt-disable: #727171;
 }
